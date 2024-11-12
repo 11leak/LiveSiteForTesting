@@ -1,0 +1,138 @@
+/*
+    https://coolors.co/11151c-212d40-364156-9ac6c5-28afb0
+
+    #11151C
+    #212D40
+    #364156
+    #9AC6C5
+    #28AFB0
+*/
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* html und body nehmen die volle Höhe des Bildschirms ein */
+}
+
+body {
+    font-family: Montserrat, Arial;
+    background-image: url(/images/background.jpg);
+    background-size: cover; /* Bild passt sich der Fenstergröße an */
+    background-position: center center; /* Bild wird in der Mitte positioniert */
+    background-repeat: no-repeat; /* Verhindert die Wiederholung des Bildes */
+    height: 100vh; /* Body füllt die volle Höhe des Viewports */
+    margin: 0;
+    padding: 0;
+}
+
+.message {
+    color: #EDEBD7;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    padding: 16px;
+
+    margin-top: 0;
+    padding-top: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+}
+
+.sign-in-window {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    column-gap: 12px;
+
+    align-items: center;
+    justify-self: center;
+
+    flex: 0.5;
+
+    padding: 40px;
+
+    max-width: 250px;
+
+    position: relative;
+
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(3px) saturate(200%);
+    background-color: rgba(23, 32, 42, 0.48);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.sign-in-behind {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr;
+    opacity: 0.65;
+}
+
+.username-container,
+.password-container,
+.sign-in-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 2px;
+}
+
+.username-input,
+.password-input,
+.sign-in-button {
+    padding: 5px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: white;
+
+    color: white;
+}
+
+.sign-in-button {
+    background-color: #212D40;
+    transition: 0.2s;
+}
+
+.username-input,
+.password-input {
+    background-color: #35233c;
+}
+
+.sign-in-button:hover {
+    background-color: rgba(161, 0, 176, 0.8);
+    cursor: pointer;
+}
+
+.sign-in-button:active {
+    background-color: rgba(146, 40, 176, 0.5);
+    cursor: pointer;
+}
+
+.username-input::placeholder,
+.password-input::placeholder {
+    color: #EDEBD7;
+}
+
+.sign-in-button {
+    margin-top: 6px;
+}
