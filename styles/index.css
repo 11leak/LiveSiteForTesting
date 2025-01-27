@@ -88,7 +88,8 @@ body {
 
 .username-container,
 .password-container,
-.sign-in-container {
+.sign-in-container,
+.sign-in-linking {
   display: grid;
   grid-template-columns: 1fr;
 
