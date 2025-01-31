@@ -8,19 +8,19 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 60px;
 }
 
 body {
-    background-color: #f5f5f5;
-    padding-top: 5rem;
+    background-color: rgb(245, 245, 245);
+    margin-top: 60px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4.5rem;
+    height: 60px;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -30,8 +30,10 @@ header {
     left: 0px;
     right: 0px;
 
-    background-color: rgba(129, 183, 200, 0.9);
+    background-color: rgba(245, 245, 245, 0.9);
     backdrop-filter: blur(7px);
+
+    z-index: 1000;
 }
 
 #header-title {
@@ -47,10 +49,17 @@ nav {
     gap: 0.7rem;
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 img {
     height: 100px;
     border-radius: 100%;
-    box-shadow: black 0px 0px 3px;
+    box-shadow: black 0px 0px 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,19 +80,6 @@ main section {
     width: 100%;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4.5rem;
-
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-
-    margin-top: 1000px;
-
-    background-color: rgba(129, 183, 200, 0.9);
-    backdrop-filter: blur(7px);
+i {
+    font-size: 60px;
 }
